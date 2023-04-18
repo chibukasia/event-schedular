@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Calendar from '@/components/calendar/calendar'
 import { IDayProps } from '@/components/calendar/DayView'
 import DayViewListCards from '@/components/organisms/DayViewLiistCards'
+import PropertyCalendarWeekView from '@/components/organisms/PropertyCalendarWeekView/PropertyCalendarWeekView'
 
 const properties: IDayProps[]=[
   {
@@ -29,6 +30,7 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
         <Calendar/>
         <DayViewListCards properties={properties}/>
+        <PropertyCalendarWeekView/>
       </div>
     </main>
   )
