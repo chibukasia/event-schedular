@@ -43,7 +43,6 @@ export default function Calendar() {
     }
   };
 
-  console.log(prevWeek.format('Do'), nextWeek.format('Do'));
   return (
     <div>
       <div className="flex">
